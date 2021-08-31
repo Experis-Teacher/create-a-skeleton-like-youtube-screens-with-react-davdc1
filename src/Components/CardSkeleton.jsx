@@ -10,15 +10,19 @@ export default function CardSkeleton({ item, channel }) {
           rel="noopener noreferrer"
           className="card-link"
         >
-          <Skeleton count={1} className="card-image" style={{width: "200px", height: "200px"}} />
-          <Skeleton count={1} className="channel-image" />
+            <div style={{display: "flex", flexDirection: "column"}}>
+          <Skeleton count={1} className="card-image" style={{width: "300px", height: "170px"}} />
+          <Skeleton count={1} className="channel-image" style={{borderRadius: "100%", width: "40px", height: "40px"}} />
           <Skeleton count={1} className="card-title" />
-          <Skeleton count={1} className="card-channel" />
-          <Skeleton count={1} className="card-metrics" />
+          <Skeleton count={1} className="card-channel" style={{width: "250px"}} />
+          <Skeleton count={1} className="card-metrics" style={{width: "100px"}} />
           <div className="card-metrics">
-          <Skeleton count={1} className="" />
-          <Skeleton count={1} className="" />
+          <Skeleton count={1} className="" style={{width: "40px"}} />
+          <Skeleton count={1} className="channel-image" style={{borderRadius: "100%", width: "6px", height: "6px", marginRight: "4px", marginLeft: "4px"}} />
+          <Skeleton count={1} className="" style={{width: "40px"}}/>
           </div>
+
+            </div>
         </a>
       </li>
     );
