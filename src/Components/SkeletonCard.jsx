@@ -22,3 +22,8 @@ const SkeletonCard = () => {
 }
 
 export default SkeletonCard
+
+
+//import React from "react";
+
+
